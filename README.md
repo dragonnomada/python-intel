@@ -1,6 +1,8 @@
 # Curso de Python Intel
 
-Por [Alan Badillo Salas (Dragón Nómada)](dragonnomada123@gmail.com)
+Por [Alan Badillo Salas (Dragón Nómada)](mailto://dragonnomada123@gmail.com)
+
+Correo: [dragonnomada123@gmail.com](mailto://dragonnomada123@gmail.com)
 
 ## Contenido
 
