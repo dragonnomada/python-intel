@@ -61,3 +61,55 @@ Veamos que son los iteradores
 #       <bloque>
 #       (return -> regresa el cómputo/resultado)
 ```
+
+## ¿Cómo clonar este repositorio?
+
+> 1. Instalar Git para Windows (en Linux y Mac ya viene instalado)
+
+[https://git-scm.com/download/win](https://git-scm.com/download/win)
+
+> 2. En la terminal, ubicar la carpeta dónde se va a clonar
+
+```bash
+cd ~/Desktop
+```
+
+> 3. Clonar el repositorio
+
+```bash
+git clone https://github.com/dragonnomada/python-intel.git
+```
+
+> 4. Ir a la carpeta clonada (`python-intel`)
+
+```bash
+cd ~/Desktop/python-intel
+
+--- terminal windows ---
+dir
+
+--- terminal windows / salida ---
+
+Directorio: E:\santuario\cursos\python-intel
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        06/09/2021     20:24                codigos
+d-----        06/09/2021     18:31                ejercicios
+d-----        06/09/2021     18:43                lab
+d-----        06/09/2021     20:23                notas
+-a----        06/09/2021     20:54           1950 README.md
+```
+
+> 5. Abrir en Visual Code ([https://code.visualstudio.com](https://code.visualstudio.com))
+
+```bash
+code .
+```
+
+> 6. Para obtener los nuevos cambios
+
+```bash
+git pull
+```
