@@ -4,6 +4,10 @@ Por [Alan Badillo Salas (Dragón Nómada)](mailto://dragonnomada123@gmail.com)
 
 Correo: [dragonnomada123@gmail.com](mailto://dragonnomada123@gmail.com)
 
+## Noticias
+
+* **Miércoles 8 de Septiembre de 2021** - Ya está disponible la [Serie 2](./ejercicios/serie-2.md) de ejercicios.
+
 ## Contenido
 
 ```text
