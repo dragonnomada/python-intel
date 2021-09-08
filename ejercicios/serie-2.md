@@ -6,6 +6,86 @@ By [Alan Badillo Salas (Dragón Nómada)](dragonnomada.medium.com)
 
 En esta segunda serie de ejercicios nuestro objetivo será dominar la abstracción de código mediante funciones y terminar de entender la programación funcional.
 
+## Variables
+
+## S2V1 - Capturar la Edad
+
+Define una función llamada `capturarEdad()` que solicite la edad usando la función `input(...)`. Considera que la edad debería ser de tipo entero.
+
+> Pruebas unitarias - Ejecuta las siguientes pruebas
+
+```py
+print( capturarEdad() ) # Debería imprimir la edad tecleada
+print( capturarEdad() + 100 ) # Debería imprimir la edad tecleada más 100
+```
+
+## S2V2 - Convertir de Pesos a Dolar
+
+Define una función llamada de `convertirPesoADolar(<base_peso_dolar>)` que solicite desde el teclado el total de pesos a convertir a dólares. Usa la `<base_peso_dolar>` para calcular a cuánto equivalen los pesos ingresados en dólares.
+
+> Pista - Tienes que dividir sobre la base. Por ejemplo, si el peso está en 20, entonces 100 pesos serán 5 dólares, es decir, `100 / 20`
+
+> Pruebas unitarias - Ejecuta las siguientes pruebas
+
+```py
+print( convertirPesoADolar(20) ) # Tecleea 100 y debería devolver 5
+print( convertirPesoADolar(20) ) # Tecleea 10 y debería devolver 0.5
+print( convertirPesoADolar(22.5) ) # Tecleea 98 y debería devolver 4.3555...
+```
+
+## Condicionales
+
+### S2C1 - Captura un Campo
+
+Define una función llamada `capturaCampo(<tipo>, <mensaje>)` que capture un valor desde el teclado, según el `<tipo>` y la siguiente tabla. El mensaje debe ser usado para la función `input(<mensaje>)`
+
+Tipo | Valor | Descripción
+--- | --- | ---
+texto | `str` | Debería usar `input(...)`, ejemplo, `nombre = capturaCampo("texto", "Dame el nombre: ")`
+entero | `int` | Debería usar `int( input(...) )`, ejemplo, `edad = capturaCampo("entero", "Dame el nombre: ")`
+decimal | `float` | Debería usar `float( input(...) )`, ejemplo, `peso = capturaCampo("decimal", "Dame el nombre: ")`
+complejo | `complex` | Debería usar `float( input("<mensaje> | Real:") )` y `float( input("<mensaje> | Imaginaria:") )`, ejemplo, `peso = capturaCampo("decimal", "Dame el nombre: ")`. Pista: Usa `complex(real, imag)` para construir el número.
+
+> Pista - Usa `if tipo == "<TIPO>"` para determinar si el `<tipo>` es de la tabla.
+
+> Pruebas unitarias - Ejecuta las siguientes pruebas
+
+```py
+print( capturaCampo("texto", "Dame el nombre: ") ) # Tecleea "Ana" y debería imprimir "Ana"
+print( capturaCampo("texto", "Dame una letra: ")[0] ) # Tecleea "UNO" y debería imprimir "U"
+print( capturaCampo("entero", "Dame la edad: ") * 2 ) # Tecleea 18 y debería imprimir 36
+print( capturaCampo("entero", "Dame el peso: ") + 1 ) # Tecleea 10 y debería imprimir 11.0
+print( capturaCampo("entero", "Dame la frecuencia: ") ) # Tecleea 1 en la parte real y 2 en la parte imaginaria
+# debería imprimir (1 + 2j)
+```
+
+### S2C2 - Piedra Papel y Tijeras
+
+Define una función llamada `piedraPapelTijeras(<jugador_1>, <jugador_2>)` que imprima quién gana "JUGADOR 1" o "JUGADOR 2", según la siguiente tabla de tiros.
+
+Jugador 1 | Jugador 2 | Ganador
+--- | --- | ---
+piedra | piedra | EMPATE
+piedra | papel | JUGADOR 2
+piedra | tijeras | JUGADOR 1
+papel | piedra | JUGADOR 1
+papel | papel | EMPATE
+papel | tijeras | JUGADOR 2
+tijeras | piedra | JUGADOR 2
+tijeras | papel | JUGADOR 1
+tijeras | tijeras | EMPATE
+
+> Pista - `<jugador_1>` puede ser "piedra", "papel" o "tijeras", y `<jugador_2>` puede ser "piedra", "papel" o "tijeras", así que determina todas las posibles combinaciones usando la condicional `if`.
+
+> Pruebas unitarias - Ejecuta las siguientes pruebas
+
+```py
+print( piedraPapelTijeras("piedra", "tijeras") ) # JUGADOR 1
+print( piedraPapelTijeras("tijeras", "piedra") ) # JUGADOR 2
+print( piedraPapelTijeras("tijeras", "tijeras") ) # EMPATE
+print( piedraPapelTijeras("papel", "tijeras") ) # JUGADOR 2
+```
+
 ## La tienda de frutas
 
 En esta sección crearemos funciones útiles para administrar una tienda de frutas.
@@ -32,7 +112,7 @@ def precioFruta(nombre):
 
 > Pruebas unitarias - Ejecuta las siguientes pruebas
 
-```
+```py
 print( precioFruta("manzana") ) # 45
 print( precioFruta("mango") ) # 32
 print( precioFruta("melón") ) # 24
