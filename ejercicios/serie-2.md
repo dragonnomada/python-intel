@@ -1,4 +1,4 @@
-# Ejercicios de Python - Serie I
+# Ejercicios de Python - Serie II
 
 By [Alan Badillo Salas (Dragón Nómada)](dragonnomada.medium.com)
 
