@@ -44,7 +44,7 @@ Tipo | Valor | Descripción
 texto | `str` | Debería usar `input(...)`, ejemplo, `nombre = capturaCampo("texto", "Dame el nombre: ")`
 entero | `int` | Debería usar `int( input(...) )`, ejemplo, `edad = capturaCampo("entero", "Dame la edad: ")`
 decimal | `float` | Debería usar `float( input(...) )`, ejemplo, `peso = capturaCampo("decimal", "Dame el peso: ")`
-complejo | `complex` | Debería usar `float( input("<mensaje> | Real:") )` y `float( input("<mensaje> | Imaginaria:") )`, ejemplo, `peso = capturaCampo("decimal", "Dame la frecuencia: ")`. Pista: Usa `complex(real, imag)` para construir el número.
+complejo | `complex` | Debería usar `float( input("<mensaje> / Real:") )` y `float( input("<mensaje> / Imaginaria:") )`, ejemplo, `peso = capturaCampo("decimal", "Dame la frecuencia: ")`. Pista: Usa `complex(real, imag)` para construir el número.
 
 > Pista - Usa `if tipo == "<TIPO>"` para determinar si el `<tipo>` es de la tabla.
 
