@@ -86,6 +86,154 @@ print( piedraPapelTijeras("tijeras", "tijeras") ) # EMPATE
 print( piedraPapelTijeras("papel", "tijeras") ) # JUGADOR 2
 ```
 
+## Iteradores
+
+### S2I1 - Pirámide
+
+Define una función llamada `imprimirPiramide(<n>)` que dibuje una pirámide con `<n>` líneas como en los siguientes ejemplos.
+
+> Ejemplo: Pirámide de 3
+
+```txt
+---o---
+--ooo--
+-ooooo-
+```
+
+> Ejemplo: Pirámide de 10
+
+```txt
+----------o----------
+---------ooo---------
+--------ooooo--------
+-------ooooooo-------
+------ooooooooo------
+-----ooooooooooo-----
+----ooooooooooooo----
+---ooooooooooooooo---
+--ooooooooooooooooo--
+-ooooooooooooooooooo-
+```
+
+> Pista: Para un `<n>` se dibujan `<n>` líneas. Cada línea tiene `<n> - <i>` guiones antes y después de las `o's` y tiene exactamente `<i>` caracteres `o`. Prueba imprimir `"-" * (n - i) + "o" * i + "-" * (n - i)`
+
+> Pruebas unitarias - Ejecuta las siguientes pruebas
+
+```py
+imprimirPiramide(5)
+# -----o-----
+# ----ooo----
+# ---ooooo---
+# --ooooooo--
+# -ooooooooo-
+```
+
+### S2I2 - Impresora Morse
+
+Define la función llamada `imprimirMorse(<texto>)` que imprima una línea por cada caracter en morse. Basate en la siguiente lista de códigos.
+
+![Código Morse](./codigo_morse.jpg)
+
+> Pista - Convierte el texto a una lista de caracteres con `list(<texto>)`, por ejemplo, `list("hola")` daría `["h", "o", "l", "a"]`
+
+> Pruebas unitarias - Ejecuta las siguientes pruebas
+
+```py
+imprimirMorse("hola")
+# ****
+# ---
+# *-**
+# *-
+imprimirMorse("mundo")
+# --
+# **-
+# -*
+# -**
+# ---
+```
+
+## Ciclos Condicionales
+
+### S2W1 - Menú
+
+Define la función `menu()` que defina un ciclo infinito que imprima el siguiente menú y capture la opción tecleada. Si la opción en `S` rompe el ciclo infinito, sino vuelve a imprimir el menú indeterminadamente. Cuándo se capture una opción imprime "Se ha seleccionado la opción {}" y formatea la opción. Haz una pausa tras cada impresión. El menú se debería ver como el siguiente texto.
+
+> Menú
+
+```txt
+Selecciona una opción:
+1. Hola mundo
+2. Otra opción
+3. Imprimir hola
+S. Salir
+
+Opción: _
+```
+
+> Pista - Coloca un `while True`, dentro imprime el menú y captura la opción. Si la opción es igual a "S" rompe el ciclo, sino imprime la opción dada y haz una pausa.
+
+> Pruebas unitarias - Ejecuta las siguientes pruebas
+
+```py
+menu()
+# Selecciona una opción:
+# 1. Hola mundo
+# 2. Otra opción
+# 3. Imprimir hola
+# S. Salir
+# 
+# Opción: 2
+# 
+# Se ha seleccionado la opción 2
+# 
+# Pulsa una tecla para continuar
+# 
+# Selecciona una opción:
+# 1. Hola mundo
+# 2. Otra opción
+# 3. Imprimir hola
+# S. Salir
+# 
+# Opción: S
+# 
+# Adiós
+```
+
+### S2W2 - Primos
+
+Define una función llamada `generarPrimos(<n>)`. Crea una lista vacía que almacene los primos. Mientras la lista tenga un tamaño menor a `<n>` genera el siguiente primo mediante el siguiente pseudocódigo.
+
+> Generador de Primos (pseudocódigo)
+
+```txt
+ENTRADA: n
+
+primos <- LISTA_VACÍA
+
+i <- 2
+
+MIENTRAS TAMAÑO(primos) < n:
+    esPrimo <- SI
+    PARA primo EN primos:
+        SI i MÓDULO primo IGUAL 0:
+            esPrimo <- NO
+            break
+    SI esPrimo:
+        primos.AGREGAR(i)
+    i <- i + 1
+
+SALIDA: primos
+```
+
+> Pista - El pseudocódigo `i MÓDULO primo IGUAL 0` equivale al código `<i> % primo == 0` en python. El pseudocódigo `primos.AGREGAR(i)` equivale a `primos.append(i)`. Observa que agregamos a los números `<i>` que cumplen ser primos (no son divisibles por ningún primo ya encontrado).
+
+> Pruebas unitarias - Ejecuta las siguientes pruebas
+
+```py
+print( generarPrimos(5) ) # [2, 3, 5, 7, 11]
+print( generarPrimos(10) ) # [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+```
+
 ## La tienda de frutas
 
 En esta sección crearemos funciones útiles para administrar una tienda de frutas.
