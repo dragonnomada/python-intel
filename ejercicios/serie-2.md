@@ -8,7 +8,7 @@ En esta segunda serie de ejercicios nuestro objetivo será dominar la abstracci�
 
 ## Variables
 
-## S2V1 - Capturar la Edad
+### S2V1 - Capturar la Edad
 
 Define una función llamada `capturarEdad()` que solicite la edad usando la función `input(...)`. Considera que la edad debería ser de tipo entero.
 
@@ -19,7 +19,7 @@ print( capturarEdad() ) # Debería imprimir la edad tecleada
 print( capturarEdad() + 100 ) # Debería imprimir la edad tecleada más 100
 ```
 
-## S2V2 - Convertir de Pesos a Dolar
+### S2V2 - Convertir de Pesos a Dolar
 
 Define una función llamada de `convertirPesoADolar(<base_peso_dolar>)` que solicite desde el teclado el total de pesos a convertir a dólares. Usa la `<base_peso_dolar>` para calcular a cuánto equivalen los pesos ingresados en dólares.
 
