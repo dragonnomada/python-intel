@@ -123,7 +123,7 @@ CIERRA ARCHIVO f
 
 ## Escritura de Archivos
 
-### S4W1 - Escribir los nombres y su longitud
+### S4W1 - Escribir los nombres y su longitud
 
 Crea una lista con nombres como `["Ana", "Pepe", "Paco", "Lisa"]`. Escribe el archivo `nombres.txt` con cada nombre, un espacio en blanco y su longitud (usa `len(nombre)` para obtenerla).
 
