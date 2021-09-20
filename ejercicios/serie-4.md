@@ -56,7 +56,7 @@ guayaba 1000
 5. Fruta: guayaba Cantidad: 1000000
 ```
 
-### S4R3 - Leer Torneos
+### S4R3 - Leer Torneos
 
 Crea un archivo llamado `torneo.txt` que contenga en la primer línea el número de jugadores `N` que pelearan, en las siguientes `N` líneas lee el nombre de cada jugador. Pasando las `N` líneas, lee el número de batallas (`B`) que pelearan dos jugadores, luego en las siguientes `B` líneas recupera los identificadores del primer y segundo jugador. Imprime un mensaje por cada pantalla con el formato `Batalla {num_batalla}: Pelea {nombre_jugador_1} vs {nombre_jugador_2}`. Revisa el ejemplo de abajo.
 
