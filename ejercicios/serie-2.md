@@ -132,7 +132,7 @@ imprimirPiramide(5)
 
 Define la función llamada `imprimirMorse(<texto>)` que imprima una línea por cada caracter en morse. Basate en la siguiente lista de códigos.
 
-![Código Morse](./codigo_morse.jpg)
+![Código Morse](./img/codigo_morse.jpg)
 
 > Pista - Convierte el texto a una lista de caracteres con `list(<texto>)`, por ejemplo, `list("hola")` daría `["h", "o", "l", "a"]`
 
