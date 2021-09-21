@@ -6,6 +6,7 @@ Correo: [dragonnomada123@gmail.com](mailto://dragonnomada123@gmail.com)
 
 ## Noticias
 
+* **Lunes 20 de Septiembre de 2021** - Ya está disponible la [Serie 4](./ejercicios/serie-4.md) de ejercicios.
 * **Domingo 12 de Septiembre de 2021** - Ya está disponible la [Serie 3](./ejercicios/serie-3.md) de ejercicios.
 * **Miércoles 8 de Septiembre de 2021** - Ya está disponible la [Serie 2](./ejercicios/serie-2.md) de ejercicios.
 

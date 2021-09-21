@@ -130,7 +130,7 @@ Crea una función llamada `areaTriángulo(punto_1, punto_2, punto_3)` que devuel
 
 > Pista - Cacula la distancia entre los puntos `a`, `b`, `c` y usa la siguiente fórmula
 
-![Área Triángulo](./area_triangulo.png)
+![Área Triángulo](./img/area_triangulo.png)
 
 ## Diccionarios
 
