@@ -60,15 +60,61 @@ class Reporte:
         # `self.columnas = ["nombre", "edad", "esCasado"]`
         # `self.datos = { "nombre": "Ana", "edad": 23, "esCasado": False }`
         
-        # TODO: Imprime todas las columnas con el formato `| {} | {} | ... |` para cada columna
+        # TODO: Imprime todas las columnas con el formato `| {:10} | {:10} | ... |` para cada columna
         # Ejemplo: | nombre | edad | esCasado |
         
-        # TODO: Imprime todos los datos para cada columna `| {} | {} | ... |` para cada columna
+        # TODO: Imprime todos los datos para cada columna `| {:10} | {:10} | ... |` para cada columna
         # Ejemplo: | Ana | 23 | False |
 ```
 
 > Pruebas unitarias
 
 ```py
-`` 
+reporte = Reporte()
 
+reporte.agregarColumna("Nombre")
+reporte.agregarColumna("Edad")
+reporte.agregarColumna("EsCasado")
+
+reporte.agregarDato("Nombre", "Ana")
+reporte.agregarDato("Edad", 23)
+reporte.agregarDato("Nombre", False)
+
+reporte.imprimir()
+# Imprime:
+# | Nombre     | Edad       | EsCasado   |
+# | Ana        | 23         | False      |
+```
+
+### S5D3 - Piedra Papel o Tijeras
+
+Crea las clases `Piedra`, `Papel`, `Tijeras` con el atributo `nombre` con `PIEDRA`, `PAPEL` o `TIJERAS` (según la clase) y el método `comparar(jugada)`, dónde `jugada` sea una instancia de `Piedra`, `Papel` o `Tijera` (revisa la prueba unitaria). El método `comparar(jugada)` deberá devolver `1` si la clase le gana a la otra, `-1` si pierde y `0` si es empate.
+
+> Pruebas unitarias
+
+```py
+jugada1 = Piedra()
+jugada2 = Tijeras()
+
+if jugada1.comparar(jugada2) == 1:
+    print(f"Gana Jugada 1 vs Jugada 2: {jugada1.nombre} le gana a {jugada2.nombre}") # Si se imprime
+
+if jugada2.comparar(jugada1) == -1:
+    print(f"Pierde Jugada 2 vs Jugada 1: {jugada2.nombre} pierde contra {jugada1.nombre}") # Si se imprime
+
+jugada3 = Papel()
+
+if jugada1.comparar(jugada3) == -1:
+    print(f"Pierde Jugada 1 vs Jugada 3: {jugada1.nombre} pierde contra {jugada3.nombre}") # Si se imprime
+
+if jugada3.comparar(jugada2) == 1:
+    print(f"Pierde Jugada 3 vs Jugada 2: {jugada3.nombre} le gana a {jugada2.nombre}") # Si se imprime
+
+jugada4 = Tijeras()
+
+if jugada4.comparar(jugada2) == 0:
+    print(f"Empata Jugada 4 vs Jugada 2: {jugada4.nombre} es igual que {jugada2.nombre}") # Si se imprime
+
+if jugada2.comparar(jugada4) == 0:
+    print(f"Empata Jugada 2 vs Jugada 4: {jugada2.nombre} es igual que {jugada4.nombre}") # Si se imprime
+```
