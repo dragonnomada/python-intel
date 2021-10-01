@@ -1,0 +1,4 @@
+Oye manda un correo ana@gmail.com desde pepe@gmail.com,
+porque el correo de karla@gmail.com ya no es válido.
+
+No olvides poner en los adjuntos a mario@gmail.com y berta@gmail.com.
