@@ -40,11 +40,15 @@ Trabajando con Lists en Python
 Veamos que son los iteradores
 ```
 
-> Sintaxis
+## Sintaxis
 
-> Parte 1
+> Parte 1 - Variables, Condicionales, Iteradores, Ciclos Condicionales y Funciones
 
-[Python Syntax - Part I](./)
+![Python Syntax - Part I](./syntax/python-syntax-part-i.png)
+
+> Parte 2 - Importación y Clases
+
+![Python Syntax - Part II](./syntax/python-syntax-part-ii.png)
 
 ## ¿Cómo clonar este repositorio?
 
