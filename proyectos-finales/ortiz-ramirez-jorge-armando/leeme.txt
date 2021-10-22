@@ -1,0 +1,53 @@
+#-------------------------------------------------------------------------------
+#
+#
+# Curso: Python Básico Intel
+# Autor: Jorge Armando Ortiz Ramirez
+# Correo: jaor87@gmail.com
+#
+# Proyecto Final.
+#
+# Problemas que se resuelven:
+#   8. Crear una gráfica de Serie
+#   9. Cargar un dataframe de datos desde un CSV
+#   xx. Guardar imágenes en formato .png en un archivo de Excel.
+#
+#
+# Justificación:
+#   Actualmente los archivos en formato CSV son muy utilizados para guardar
+#   y manipular una gran cantidad de datos, por ejemplo los osciloscopios de
+#   keysight pueden guardar informacion en dicho formato. Poder manipular y
+#   gráficar dicha información de manera automatizada y además tener la opción
+#   de generar un reporte resulta muy útil tanto en el ámbito laboral como
+#   cientifico.
+#
+#   En el presente código se pretende tomar información de un CSV previamente
+#   generado, extraer la información, graficarla y guardar la gráfica en formato
+#   .png para tener la posibilidad de agregarla en un reporte en un archivo de
+#   Excel.
+#
+#
+# Pequeña descripción:
+#   1. Mediante la librería pathlib se accede a un directorio especificado y se
+#      busca un patron en los nombres de los archivos que se encuentran en dicho
+#      directorio, ésto último haciendo uso de la librería re.
+#
+#   2. Se extrae la informacion de dicho CSV y se carga en un dataframe con
+#      ayuda de la librería pandas.
+#
+#   3. Se grafica con pyplot la información del CSV o los CSVs que coincidieron
+#      con el patrón de búsqueda y se muestra.
+#
+#   4. Si así se desea, se agrega la imágen de la gráfica en formato .png a un
+#      archivo de Excel.
+#
+#
+# Librerias de python necesarias:
+#   pandas
+#   matplotlib
+#   time
+#   pathlib
+#   re
+#   openpyxl
+#
+#-------------------------------------------------------------------------------
